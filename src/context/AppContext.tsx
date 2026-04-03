@@ -89,8 +89,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   const cancelOrder = (orderId: string): boolean => {
     if (!can("cancelOrder")) return false;
+    const country = getVisibleCountry();
     setOrders((prev) =>
-      prev.map((o) => (o.id === orderId && o.status === "placed" ? { ...o, status: "cancelled" } : o))
+      prev.map((o) => (o.id === orderId && o.status === "placed" && (country === null || o.country === country) ? { ...o, status: "cancelled" } : o))
     );
     return true;
   };
