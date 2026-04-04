@@ -20,7 +20,7 @@ export const RESTAURANTS: Restaurant[] = [
       { id: "m1", name: "Butter Chicken", price: 320, description: "Creamy tomato-based curry with tender chicken", category: "Main", image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=400&q=80" },
       { id: "m2", name: "Paneer Tikka", price: 240, description: "Grilled cottage cheese with spices", category: "Starter", image: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=400&q=80" },
       { id: "m3", name: "Biryani", price: 280, description: "Fragrant basmati rice with aromatic spices", category: "Main", image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=400&q=80" },
-      { id: "m4", name: "Gulab Jamun", price: 120, description: "Deep-fried milk dumplings in sugar syrup", category: "Dessert", image: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Gulab_jamun_%28Dessert%29.jpg" },
+      { id: "m4", name: "Gulab Jamun", price: 120, description: "Deep-fried milk dumplings in sugar syrup", category: "Dessert", image: "https://images.unsplash.com/photo-1599557434318-7e4526dd20a6?w=400&auto=format&fit=crop&q=80" },
     ],
   },
   {
@@ -30,7 +30,7 @@ export const RESTAURANTS: Restaurant[] = [
     country: "India",
     rating: 4.2,
     menu: [
-      { id: "m5", name: "Vada Pav", price: 60, description: "Spicy potato fritter in a bun", category: "Snack", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Vadapav.jpg/800px-Vadapav.jpg" },
+      { id: "m5", name: "Vada Pav", price: 60, description: "Spicy potato fritter in a bun", category: "Snack", image: "https://images.unsplash.com/photo-1628192323381-80a52dfdb0d4?w=400&auto=format&fit=crop&q=80" },
       { id: "m6", name: "Pav Bhaji", price: 150, description: "Mashed vegetable curry with buttered bread", category: "Main", image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=400&q=80" },
       { id: "m7", name: "Samosa", price: 40, description: "Crispy pastry with spiced potato filling", category: "Snack", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80" },
       { id: "m8", name: "Masala Chai", price: 30, description: "Spiced Indian tea", category: "Beverage", image: "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=400&q=80" },
@@ -58,7 +58,7 @@ export const RESTAURANTS: Restaurant[] = [
     menu: [
       { id: "m13", name: "Margherita Pizza", price: 14, description: "Fresh mozzarella, basil, tomato sauce", category: "Main", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80" },
       { id: "m14", name: "Pepperoni Pizza", price: 16, description: "Classic pepperoni with melted cheese", category: "Main", image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=400&q=80" },
-      { id: "m15", name: "Garlic Knots", price: 6, description: "Soft dough knots with garlic butter", category: "Side", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Garlic_knots.jpg/800px-Garlic_knots.jpg" },
+      { id: "m15", name: "Garlic Knots", price: 6, description: "Soft dough knots with garlic butter", category: "Side", image: "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&w=400&q=80" },
       { id: "m16", name: "Caesar Salad", price: 10, description: "Romaine, croutons, parmesan, caesar dressing", category: "Starter", image: "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=400&q=80" },
     ],
   },
