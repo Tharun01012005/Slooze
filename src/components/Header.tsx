@@ -4,6 +4,7 @@ import { ShoppingCart, LogOut, Sun, Moon, Menu } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Header() {
   const { currentUser, setCurrentUser, cart, clearCart } = useApp();
@@ -33,8 +34,8 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-sm">
-      <div className="max-w-5xl mx-auto flex items-center justify-between px-4 h-14">
+    <header className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-sm py-1.5">
+      <div className="max-w-5xl mx-auto flex items-center justify-between px-4 min-h-[56px]">
         <div className="flex items-center justify-start gap-4">
           <Sheet>
             <SheetTrigger asChild>
@@ -116,13 +117,15 @@ export default function Header() {
           </button>
 
           <div className="flex items-center pl-1 sm:pl-2">
-            <div className="hidden sm:flex flex-col items-end mr-2">
-              <Badge variant="outline" className="text-xs">
-                {currentUser.name}
-              </Badge>
-              <Badge className="text-[10px] uppercase font-bold tracking-wider mt-0.5" variant="secondary">
-                {currentUser.role}
-              </Badge>
+            <div className="hidden sm:flex flex-col items-center justify-center mr-3 mt-1 cursor-default">
+              <Avatar className="h-8 w-8 mb-1 border border-border">
+                <AvatarImage src={`https://avatar.vercel.sh/${currentUser.id}`} alt={currentUser.name} />
+                <AvatarFallback className="bg-primary/10 text-primary text-xs font-semibold">
+                  {currentUser.name.charAt(0).toUpperCase()}
+                </AvatarFallback>
+              </Avatar>
+              <span className="text-[11px] font-bold leading-none text-foreground">{currentUser.name}</span>
+              <span className="text-[9px] uppercase font-bold text-muted-foreground leading-none mt-1 bg-secondary px-1.5 py-0.5 rounded-sm">{currentUser.role}</span>
             </div>
             <button
               onClick={() => {
