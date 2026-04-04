@@ -76,11 +76,18 @@ export default function RestaurantList() {
                       key={item.id}
                       className="flex items-center justify-between px-4 py-3 border-b border-border last:border-b-0"
                     >
-                      <div className="flex-1 min-w-0">
-                        <p className="font-medium text-sm text-card-foreground">{item.name}</p>
-                        <p className="text-xs text-muted-foreground mt-0.5 truncate">{item.description}</p>
+                      <div className="flex items-center flex-1 min-w-0 mr-4">
+                        {item.image && (
+                          <div className="w-16 h-16 rounded-md overflow-hidden flex-shrink-0 mr-4 border border-border">
+                            <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                          </div>
+                        )}
+                        <div className="flex-1 min-w-0">
+                          <p className="font-medium text-sm text-card-foreground">{item.name}</p>
+                          <p className="text-xs text-muted-foreground mt-0.5 truncate">{item.description}</p>
+                        </div>
                       </div>
-                      <div className="flex items-center gap-3 ml-4">
+                      <div className="flex items-center gap-3">
                         <span className="text-sm font-semibold text-foreground">
                           {r.country === "India" ? `₹${item.price}` : `$${item.price}`}
                         </span>
